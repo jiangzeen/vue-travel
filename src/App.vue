@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <a href="#">列表页</a>
     <router-view/>
   </div>
 </template>
