@@ -120,6 +120,7 @@ export default {
               padding-left .2rem
           .item-info-price
             margin-top .2rem
+            line-height .5rem
             width 95%
             color #ff8300
             .price
