@@ -29,56 +29,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [
-        {
-          id: '001',
-          title: '通天岩',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1411/91/02b4eb776c1acc0e8bb62b127b7316b1.water.jpg_200x200_e3a0acd4.jpg',
-          price: '55',
-          commentNum: '34',
-          address: '章贡区',
-          grade: ['&#xe610;', '&#xe610;', '&#xe610;', '&#xe610;', '&#xe640;']
-        },
-        {
-          id: '002',
-          title: '南武当旅游景区',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/201212/21/da4b5b71cb6c853d93835fbb.png_200x200_35b9935a.png',
-          price: '69',
-          commentNum: '216',
-          address: '龙南县',
-          grade: ['&#xe610;', '&#xe610;', '&#xe610;', '&#xe610;', '&#xe610;']
-        },
-        {
-          id: '003',
-          title: '汉仙温泉',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1901/30/305b697559fe0b88a3.img.jpg_200x200_eb6a7c66.jpg',
-          price: '168',
-          commentNum: '34',
-          address: '会昌县',
-          grade: ['&#xe610;', '&#xe610;', '&#xe610;', '&#xe610;', '&#xe640;']
-        },
-        {
-          id: '004',
-          title: '罗汉岩',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/201306/19/56d782a1b741ca25c8d65eac.jpg_200x200_ad6d567e.jpg',
-          price: '40',
-          commentNum: '550',
-          address: '瑞金市',
-          grade: ['&#xe610;', '&#xe610;', '&#xe610;', '&#xe610;', '&#xe640;']
-        },
-        {
-          id: '005',
-          title: '阳明湖',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1611/c5/c5872e796d500168a3.water.jpg_200x200_d6d790e1.jpg',
-          price: '70',
-          commentNum: '190',
-          address: '上犹县',
-          grade: ['&#xe610;', '&#xe610;', '&#xe610;', '&#xe610;', '&#xe640;']
-        }
-      ]
-    }
+  props: {
+    'recommendList': Array
   }
 }
 </script>
