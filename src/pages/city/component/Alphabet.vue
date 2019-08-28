@@ -1,7 +1,7 @@
 <template>
     <ul class="list">
       <li @click="handleAlphabetClick"
-          @touchstart="handleTouchStart"
+          @touchstart.prevent="handleTouchStart"
           @touchmove="handleTouchMove"
           @touchend="handleTouchEnd"
           :ref="letter"
@@ -68,7 +68,7 @@ export default {
       justify-content center
       position absolute
       right 0
-      top 4.0rem
+      top 3.0rem
       width .4rem
       color: #00bcd4;
       .item

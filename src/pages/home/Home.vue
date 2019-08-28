@@ -1,6 +1,6 @@
 <template>
   <div>
-    <home-header :city="city"></home-header>
+    <home-header></home-header>
     <home-swiper :swiperList="swiperList"></home-swiper>
     <home-icon  :iconsList="iconsList"></home-icon>
     <home-recommend :recommendList="recommendList"></home-recommend>
@@ -23,7 +23,6 @@ export default {
   // 首页发送ajax请求，获取到全部的首页数据
   data () {
     return {
-      'city': '',
       'iconsList': [],
       'swiperList': [],
       'recommendList': [],
@@ -42,7 +41,6 @@ export default {
       res = res.data
       if (res.data && res.result) {
         const data = res.data
-        this.city = data.city
         this.iconsList = data.iconsList
         this.swiperList = data.swiperList
         this.recommendList = data.recommendList
