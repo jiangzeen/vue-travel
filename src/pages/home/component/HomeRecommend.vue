@@ -9,7 +9,11 @@
         <li class="item" v-for="recommendItem in recommendList" :key="recommendItem.id">
           <img class="item-img-content" :src="recommendItem.imgUrl">
           <div class="item-info">
-            <p class="item-info-title">{{ recommendItem.title }}</p>
+            <router-link
+              to="/detail/001"
+              tag="p"
+              class="item-info-title">{{ recommendItem.title }}
+            </router-link>
             <p class="item-info-desc">
               <span class="iconfont score" v-for="(grades, index) in recommendItem.grade" v-html="grades" :key="index"></span>
               <span class="item-info-desc comment">{{ recommendItem.commentNum }}条评论</span>
